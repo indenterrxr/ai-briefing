@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 브리핑 — bard's digest</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d2e;
+      --border: #2a2d3e;
+      --accent: #6c63ff;
+      --accent2: #ff6584;
+      --text: #e2e8f0;
+      --muted: #8892a4;
+      --tag-bg: #1e2235;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+      background: var(--surface);
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+    .brand {
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .brand-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+    }
+    .brand-text h1 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; }
+    .brand-text p { font-size: 0.75rem; color: var(--muted); margin-top: 1px; }
+
+    .hero {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h2 {
+      font-size: 2rem; font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #e2e8f0 30%, var(--accent));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero p { color: var(--muted); margin-top: 0.5rem; font-size: 0.95rem; }
+
+    .posts { padding: 2rem 0; }
+    .post-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .post-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .post-meta {
+      display: flex; align-items: center; gap: 0.6rem;
+      margin-bottom: 0.65rem;
+    }
+    .tag {
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: 0.7rem; font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      letter-spacing: 0.5px;
+    }
+    .date { font-size: 0.75rem; color: var(--muted); }
+    .post-card h3 {
+      font-size: 1.05rem; font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .post-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; }
+    .post-card .arrow {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .empty {
+      text-align: center; padding: 4rem 0; color: var(--muted);
+    }
+    .empty .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="brand-icon">🤖</div>
+        <div class="brand-text">
+          <h1>AI 브리핑</h1>
+          <p>bard's AI digest · 자동 발행</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <h2>매일 AI 핵심 뉴스</h2>
+      <p>Claude, ChatGPT, Gemini 및 AI 업계의 가장 중요한 소식만 골라 정리합니다.</p>
+    </div>
+
+    <div class="posts" id="posts-list">
+      <!-- 브리핑 목록이 여기에 자동으로 추가됩니다 -->
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      Powered by Claude · 자동 생성 브리핑
+    </div>
+  </footer>
+
+  <script>
+    // posts.json에서 브리핑 목록을 불러와 렌더링
+    fetch('posts.json')
+      .then(r => r.json())
+      .then(posts => {
+        const container = document.getElementById('posts-list');
+        if (!posts.length) {
+          container.innerHTML = '<div class="empty"><div class="icon">📭</div><p>아직 발행된 브리핑이 없습니다.</p></div>';
+          return;
+        }
+        container.innerHTML = posts.map(p => `
+          <a class="post-card" href="${p.file}">
+            <div class="post-meta">
+              <span class="tag">AI NEWS</span>
+              <span class="date">${p.date}</span>
+            </div>
+            <h3>${p.title}</h3>
+            <p>${p.summary}</p>
+            <span class="arrow">읽기 →</span>
+          </a>
+        `).join('');
+      })
+      .catch(() => {
+        document.getElementById('posts-list').innerHTML =
+          '<div class="empty"><div class="icon">📭</div><p>브리핑을 불러올 수 없습니다.</p></div>';
+      });
+  </script>
+</body>
+</html>
