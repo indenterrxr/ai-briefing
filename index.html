@@ -108,9 +108,6 @@
       font-size: 0.75rem;
       color: var(--muted);
     }
-  
-    .post-meta .view-count { margin-left: auto; font-size: 0.7rem; color: var(--muted); display: flex; align-items: center; gap: 0.25rem; }
-    .post-meta .view-count svg { width: 13px; height: 13px; fill: var(--muted); }
   </style>
 </head>
 <body>
@@ -144,29 +141,18 @@
   </footer>
 
   <script>
-    (async function() {
-      var TK = ['ghp_5QfggQNCoTO4Tcnm','KFRbnwcD0s77YY4OoYEa'].join('');
-      var REPO = 'indenterrxr/ai-briefing';
-      var VAPI = 'https://api.github.com';
-      try {
-        var postsR = await fetch('posts.json').then(function(r){return r.json();});
-        var viewsR = null;
-        try { var vr = await fetch(VAPI+'/repos/'+REPO+'/contents/views.json',{headers:{'Authorization':'token '+TK,'Accept':'application/vnd.github.v3+json'}}); if(vr.ok){viewsR=await vr.json();} } catch(e){}
-        var views = {};
-        if (viewsR && viewsR.content) { views = JSON.parse(decodeURIComponent(escape(atob(viewsR.content.replace(/\n/g,''))))); }
+    fetch('posts.json')
+      .then(function(r) { return r.json(); })
+      .then(function(posts) {
         var container = document.getElementById('posts-list');
-        if (!postsR.length) { container.innerHTML = '<div class="empty"><div class="icon">\ud83d\udced</div><p>\uc544\uc9c1 \ubc1c\ud589\ub41c \ube0c\ub9ac\ud551\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.</p></div>'; return; }
-        var eyeSvg = '<svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>';
-        container.innerHTML = postsR.map(function(p) {
-          var pageKey = p.file.replace(/\.html$/,'');
-          var vc = views[pageKey] || 0;
-          var viewBadge = vc > 0 ? '<span class="view-count">'+eyeSvg+vc+'</span>' : '';
-          return '<a class="post-card" href="'+p.file+'"><div class="post-meta"><span class="tag">AI NEWS</span><span class="date">'+p.date+'</span>'+viewBadge+'</div><h3>'+p.title+'</h3><p>'+p.summary+'</p><span class="arrow">\uc77d\uae30 \u2192</span></a>';
+        if (!posts.length) { container.innerHTML = '<div class="empty"><div class="icon">\ud83d\udced</div><p>\uc544\uc9c1 \ubc1c\ud589\ub41c \ube0c\ub9ac\ud551\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.</p></div>'; return; }
+        container.innerHTML = posts.map(function(p) {
+          return '<a class="post-card" href="' + p.file + '"><div class="post-meta"><span class="tag">AI NEWS</span><span class="date">' + p.date + '</span></div><h3>' + p.title + '</h3><p>' + p.summary + '</p><span class="arrow">\uc77d\uae30 \u2192</span></a>';
         }).join('');
-      } catch(e) {
+      })
+      .catch(function() {
         document.getElementById('posts-list').innerHTML = '<div class="empty"><div class="icon">\ud83d\udced</div><p>\ube0c\ub9ac\ud551\uc744 \ubd88\ub7ec\uc62c \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.</p></div>';
-      }
-    })();
+      });
     </script>
 </body>
 </html>
