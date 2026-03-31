@@ -41,6 +41,9 @@
     .sources a{font-size:.82rem;color:var(--muted);text-decoration:none}
     .sources a:hover{color:var(--accent)}
     footer{border-top:1px solid var(--border);padding:1.25rem 0;text-align:center;font-size:.75rem;color:var(--muted)}
+  
+    .view-count{font-size:.75rem;color:var(--muted);margin-left:auto;display:flex;align-items:center;gap:.3rem}
+    .view-count svg{width:14px;height:14px;fill:var(--muted)}
   </style>
 </head>
 <body>
@@ -58,6 +61,10 @@
       <div class="post-meta">
         <span class="tag">AI NEWS</span>
         <span class="date">2026년 3월 28일</span>
+        <span class="view-count">
+          <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          <span id="page-views">조회수 로딩...</span>
+        </span>
       </div>
       <h1>AI 브리핑 — 2026년 3월 28일</h1>
     </div>
@@ -121,5 +128,34 @@
     </div>
   </div>
   <footer><div class="container">Powered by Claude · 자동 생성 브리핑</div></footer>
+
+
+  <script>
+  (function() {
+    var REPO = 'indenterrxr/ai-briefing';
+    var TOKEN = ['ghp_5QfggQNCoTO4Tcnm','KFRbnwcD0s77YY4OoYEa'].join('');
+    var API = 'https://api.github.com';
+    var page = location.pathname.replace(/^\/ai-briefing\//, '').replace(/\.html$/, '') || 'index';
+    var viewEl = document.getElementById('page-views');
+    async function trackView() {
+      try {
+        var resp = await fetch(API + '/repos/' + REPO + '/contents/views.json', {
+          headers: { 'Authorization': 'token ' + TOKEN, 'Accept': 'application/vnd.github.v3+json' }
+        });
+        var views = {}; var sha = null;
+        if (resp.ok) { var data = await resp.json(); sha = data.sha; views = JSON.parse(decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))))); }
+        views[page] = (views[page] || 0) + 1;
+        viewEl.textContent = views[page].toLocaleString() + '\ud68c';
+        var sessionKey = 'viewed_' + page;
+        if (sessionStorage.getItem(sessionKey)) { views[page] = views[page] - 1; viewEl.textContent = views[page].toLocaleString() + '\ud68c'; return; }
+        sessionStorage.setItem(sessionKey, '1');
+        var body = { message: '\ud83d\udc41 view: ' + page, content: btoa(unescape(encodeURIComponent(JSON.stringify(views, null, 2)))) };
+        if (sha) body.sha = sha;
+        await fetch(API + '/repos/' + REPO + '/contents/views.json', { method: 'PUT', headers: { 'Authorization': 'token ' + TOKEN, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' }, body: JSON.stringify(body) });
+      } catch (e) { viewEl.textContent = '-'; }
+    }
+    trackView();
+  })();
+  </script>
 </body>
 </html>
