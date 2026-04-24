@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 브리핑 — 2026년 4월 24일</title>
+  <style>
+    :root { --bg:#0f1117;--surface:#1a1d2e;--border:#2a2d3e;--accent:#6c63ff;--accent2:#ff6584;--text:#e2e8f0;--muted:#8892a4;--tag-bg:#1e2235;--code-bg:#13151f; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+    header{border-bottom:1px solid var(--border);padding:1.25rem 0;background:var(--surface);position:sticky;top:0;z-index:10}
+    .container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+    nav{display:flex;align-items:center;gap:1rem}
+    nav a{color:var(--muted);text-decoration:none;font-size:.85rem}
+    nav a:hover{color:var(--text)}
+    .brand{font-weight:700;font-size:.9rem;color:var(--text);text-decoration:none}
+    .sep{color:var(--border)}
+    .post-header{padding:3rem 0 2rem;border-bottom:1px solid var(--border)}
+    .post-meta{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem;flex-wrap:wrap}
+    .tag{background:var(--tag-bg);color:var(--accent);font-size:.7rem;font-weight:600;padding:.2rem .5rem;border-radius:4px;border:1px solid var(--border);letter-spacing:.5px}
+    .date{font-size:.8rem;color:var(--muted)}
+    .views img{height:18px;vertical-align:middle;border-radius:3px;display:block}
+    h1{font-size:1.9rem;font-weight:800;letter-spacing:-.5px;background:linear-gradient(135deg,#e2e8f0 40%,var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.25}
+    .content{padding:2.5rem 0 4rem}
+    .content h2{font-size:1.2rem;font-weight:700;margin:2rem 0 .75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);color:var(--text)}
+    .content h3{font-size:1rem;font-weight:700;margin:1.5rem 0 .5rem;color:var(--accent)}
+    .content p{font-size:.925rem;line-height:1.8;color:var(--text);margin-bottom:1rem}
+    .content ul{margin:.5rem 0 1rem 1.25rem}
+    .content li{font-size:.9rem;line-height:1.8;color:var(--text);margin-bottom:.25rem}
+    .content strong{color:#fff;font-weight:700}
+    .content a{color:var(--accent);text-decoration:none}
+    .content a:hover{text-decoration:underline}
+    .content table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.875rem}
+    .content th{background:var(--surface);padding:.6rem .8rem;border:1px solid var(--border);color:var(--muted);font-weight:600;text-align:left}
+    .content td{padding:.6rem .8rem;border:1px solid var(--border)}
+    .content blockquote{border-left:3px solid var(--accent);padding:.75rem 1rem;background:var(--surface);border-radius:0 8px 8px 0;margin:1rem 0;color:var(--muted);font-size:.9rem}
+    .content hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
+    .sources{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin-top:2.5rem}
+    .sources h4{font-size:.8rem;color:var(--muted);margin-bottom:.75rem;letter-spacing:1px}
+    .sources ul{list-style:none}
+    .sources li{margin-bottom:.4rem}
+    .sources a{font-size:.82rem;color:var(--muted);text-decoration:none}
+    .sources a:hover{color:var(--accent)}
+    footer{border-top:1px solid var(--border);padding:1.25rem 0;text-align:center;font-size:.75rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="brand">🤖 AI 브리핑</a>
+        <span class="sep">/</span>
+        <a href="../index.html">전체 목록</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="post-header">
+      <div class="post-meta">
+        <span class="tag">AI NEWS</span>
+        <span class="date">2026년 4월 24일</span>
+        <span class="views"><img src="https://hits.sh/indenterrxr.github.io/ai-briefing/posts/2026-04-24.html.svg?style=flat&color=6c63ff&labelColor=1a1d2e&label=views" alt="조회수" /></span>
+      </div>
+      <h1>Google Cloud Next의 "에이전트 공장", SpaceX의 Cursor $60B 인수설, Moltbook 초대형 유출 사고</h1>
+    </div>
+    <div class="content">
+      <blockquote>오늘의 키워드는 <strong>"에이전트 유통"</strong>과 <strong>"에이전트 보안 사고"</strong>입니다. Google이 라스베이거스에서 <strong>A2A 프로토콜과 Workspace Studio</strong>를 공개했고, SpaceX는 <strong>Cursor를 600억 달러에 인수한다</strong>는 소식으로 HN을 뒤흔들었으며, AI 에이전트 전용 SNS <strong>Moltbook</strong>의 DB가 그대로 열린 채 발견되었습니다.</blockquote>
+
+      <h2>1. Google Cloud Next 2026 — "모델 판매"에서 "에이전트 공장"으로</h2>
+      <p>4월 22일 라스베이거스에서 열린 <strong>Google Cloud Next 2026</strong>에서 Google 클라우드 사업부는 기업 내부에서 <strong>AI 에이전트를 만들고 그 작업을 추적·관리</strong>할 수 있는 전면 개편된 도구 세트를 공개했습니다. 핵심 축은 세 가지입니다.</p>
+      <ul>
+        <li><strong>Workspace Studio</strong> — Docs·Sheets·Gmail에 직접 붙는 업무 에이전트를 노코드로 조립</li>
+        <li><strong>A2A(Agent-to-Agent) 프로토콜</strong> — 서로 다른 조직/벤더의 에이전트가 표준 포맷으로 협업</li>
+        <li><strong>Deep Research Max</strong> — Gemini 3.1 Pro 기반, <strong>MCP 네이티브 통합</strong>과 자동 시각화로 장시간 자율 리서치 실행</li>
+      </ul>
+      <p>Google의 메시지는 분명합니다. "모델만 파는 시대는 끝났고, 이제는 <strong>에이전트를 찍어내고 운영하는 플랫폼</strong>이 승부처"라는 선언으로, 지금까지의 <strong>OpenAI 정면 도전에서 → Anthropic과도 맞서는 풀스택 베팅</strong>으로 전선을 넓혔습니다.</p>
+
+      <h2>2. SpaceX가 Cursor를 600억 달러에? — HN에서 731개 스레드로 폭발</h2>
+      <p><strong>SpaceX가 AI 코딩 어시스턴트 Cursor를 약 600억 달러에 인수</strong>한다는 보도가 나오면서 Hacker News에서만 <strong>731개 댓글</strong>이 달리는 난상토론이 벌어졌습니다. 쟁점은 크게 두 가지입니다.</p>
+      <ul>
+        <li><strong>밸류에이션 적정성</strong>: 2025년 말까지 "AI 코딩 카테고리 리더"로 불리던 Cursor의 매출/성장률이 정말 이 가격을 정당화하는가</li>
+        <li><strong>SpaceX의 전략적 의도</strong>: 위성·로켓 회사가 개발자 툴을 왜? — Starlink·Dojo·xAI와의 연계, 그리고 머스크 제국 내 "코드 생성 파이프라인" 확보설이 유력</li>
+      </ul>
+      <blockquote>업계에서는 "수직 통합의 새로운 임계점"이라는 평과 "AI 툴이 다시 한번 빅테크의 하드웨어 전쟁 카드가 됐다"는 분석이 동시에 나옵니다.</blockquote>
+
+      <h2>3. Moltbook 유출 — "AI 에이전트 SNS"에서 API 토큰 150만 건이 샜다</h2>
+      <p>오늘 AI 보안 쪽에서 가장 충격적인 소식은 <strong>AI 에이전트 전용 소셜 네트워크 "Moltbook"의 DB가 인증 없이 완전히 열린 채 발견</strong>된 사건입니다.</p>
+      <ul>
+        <li>노출된 이메일 주소 <strong>약 3만 5천 건</strong></li>
+        <li><strong>에이전트 API 토큰 약 150만 건</strong> — 토큰 중 상당수는 여전히 유효 상태</li>
+        <li>일부 비공개 메시지에는 <strong>평문 OpenAI API 키</strong>까지 포함</li>
+      </ul>
+      <p>이번 사고는 "에이전트가 에이전트와 대화하는" 아키텍처의 <strong>비밀 관리(secret management)</strong>가 얼마나 취약한지를 드러내는 상징적 케이스로 빠르게 번지고 있습니다. 해당 플랫폼 사용 경험이 있는 조직은 <strong>API 키 전수 회전(rotation)</strong>을 권고합니다.</p>
+
+      <h2>4. Google Antigravity(에이전틱 IDE) 원격 코드 실행 취약점</h2>
+      <p>보안 리서처들이 <strong>Google의 에이전틱 IDE "Antigravity"에서 원격 코드 실행(RCE)으로 이어질 수 있는 취약점</strong>을 공개했습니다. 공격자가 조작된 프로젝트·프롬프트를 삽입해 개발자 로컬 환경에서 임의 코드를 실행시킬 수 있는 벡터로, "IDE가 스스로 코드를 쓰고 실행하는" 구조 자체가 새로운 공격면이라는 점을 다시 일깨운 사건입니다.</p>
+
+      <h2>5. 미 연방법원 — "AI가 광고 콘텐츠에 '최종 권한'을 행사하면 플랫폼도 책임"</h2>
+      <p>북부 캘리포니아 연방법원이 <strong>광고에 들어가는 콘텐츠 조립 과정에서 AI가 '최종 권한(ultimate authority)'을 행사하는 경우, 해당 플랫폼도 허위 진술의 "작성자(maker)"로 간주될 수 있다</strong>고 판시했습니다. 적용 대상은 <strong>Meta·Alphabet·Snap·TikTok·X Corp</strong> 등 주요 플랫폼 전반이며, 광고 생성/타깃팅에 AI를 적극 쓰는 모든 서비스에 중요한 판례입니다.</p>
+
+      <h2>6. OpenAI GPT-5.5 — "도구를 갈아타며 혼자 일한다"</h2>
+      <p>OpenAI가 <strong>GPT-5.5</strong>를 공개했습니다. 핵심 포지셔닝은 <strong>"여러 도구 사이를 자율적으로 갈아타며 복잡한 작업을 끝까지 수행하는 에이전트형 모델"</strong>로, 단일 호출로 웹·파일·코드 실행·데이터 조회를 조합합니다. Google의 A2A 발표와 맞물려, 이번 주는 <strong>"에이전트 아키텍처 경쟁"이 공식 개막한 주간</strong>으로 기록될 가능성이 큽니다.</p>
+
+      <h2>7. ChatGPT Images 2.0 — 텍스트 렌더링·지시 준수 대폭 개선</h2>
+      <p>OpenAI는 <strong>ChatGPT Images 2.0</strong>을 공개했습니다. 이전 모델에서 약점으로 지적되던 <strong>이미지 내 텍스트 렌더링 품질과 프롬프트 지시 준수 능력</strong>이 크게 개선됐고, 상위 플랜 사용자에게는 "thinking 기반 이미지 생성" 옵션까지 열렸습니다. Claude Design(디자인 산출물 협업)과 정면으로 부딪치는 기능군입니다.</p>
+
+      <h2>8. 기타 주목할 흐름</h2>
+      <ul>
+        <li><strong>Vercel 데이터 유출 — "Context AI" 해킹 경유</strong>: 서드파티 AI 서비스를 거쳐 Vercel 고객 자격 증명 일부가 유출. 공급망 보안이 다시 화두.</li>
+        <li><strong>"브라우저 익스텐션이 차세대 AI 소비 채널"</strong>(The Hacker News): 앱 설치 없이 크롬/아크/엣지 확장으로 AI가 워크플로에 침투하는 패턴이 급확산.</li>
+        <li><strong>Reddit, AI 검색엔진 인용 1위</strong>: 주요 AI 검색 플랫폼이 Reddit을 가장 많이 참조한다는 분석. 브랜드·SEO 전략의 무게중심이 이동 중.</li>
+        <li><strong>AI 도구 체감 품질 저하 논쟁</strong>: "최근 30일간 Claude·GPT·Gemini가 모두 나빠졌다"는 Medium 기사가 커뮤니티에서 다시 회자. 실제 회귀인지, 사용량 급증에 따른 속도·비용 최적화의 부작용인지 논의 중.</li>
+      </ul>
+
+      <h2>9. 한 줄 정리</h2>
+      <p>오늘의 시장 신호는 명확합니다 — <strong>상위 레이어는 "에이전트 플랫폼"</strong>이 주도하고(Google Cloud Next, GPT-5.5), <strong>하위 레이어에서는 "에이전트 보안"</strong>이 터지기 시작했습니다(Moltbook, Antigravity, Vercel). 조직에서 에이전트를 프로덕션에 올릴 계획이 있다면, 이번 주 사고들은 <strong>비밀 관리·권한 분리·감사 로그</strong>를 설계의 전제 조건으로 삼아야 할 이유를 보여줍니다.</p>
+
+      <div class="sources">
+        <h4>SOURCES</h4>
+        <ul>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic">Bloomberg: Google Releases New AI Agents to Challenge OpenAI and Anthropic</a></li>
+          <li><a href="https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era">TNW: Google Cloud Next 2026 — A2A protocol, Workspace Studio</a></li>
+          <li><a href="https://www.techflowpost.com/en-US/article/31268">TechFlow: SpaceX Plans $60B Acquisition of Cursor</a></li>
+          <li><a href="https://thehackernews.com/">The Hacker News — Moltbook, Antigravity, Vercel/Context AI</a></li>
+          <li><a href="https://thehackernews.com/2026/04/browser-extensions-are-new-ai.html">The Hacker News: Browser Extensions Are the New AI Consumption Channel</a></li>
+          <li><a href="https://llm-stats.com/llm-updates">LLM Stats: AI Updates Today (April 2026)</a></li>
+          <li><a href="https://blog.greeden.me/en/2026/04/23/april-17-april-23-2026-weekly-generative-ai-news-roundup-the-practical-rise-of-image-thinking-the-emergence-of-design-aiand-the-full-scale-arrival-of-research-agents/">Weekly Generative AI News Roundup (Apr 17–23, 2026)</a></li>
+          <li><a href="https://www.humai.blog/ai-news-trends-april-2026-complete-monthly-digest/">AI News & Trends April 2026: Monthly Digest</a></li>
+          <li><a href="https://news.ycombinator.com/item?id=47667978">Hacker News: Reddit is the #1 most cited source across every major AI search platform</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer><div class="container">Powered by Claude · 자동 생성 브리핑</div></footer>
+</body>
+</html>
