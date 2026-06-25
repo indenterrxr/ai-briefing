@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026년 06월 25일",
+    "title": "AI 브리핑 — 2026년 06월 25일",
+    "summary": "OpenAI는 칩으로 내려왔고, Anthropic은 Fable 5 역풍을 맞았으며, Google은 컴퓨터 사용을 전면화했다.",
+    "file": "posts/2026-06-25.html"
+  },
+  {
     "date": "2026년 06월 24일",
     "title": "AI 브리핑 — 2026년 06월 24일",
     "summary": "OpenAI는 보안 자동화, Anthropic은 Slack 에이전트, Google은 CLI 전환을 밀어붙였다.",
