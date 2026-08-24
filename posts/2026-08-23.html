@@ -66,79 +66,83 @@
     <div class="content">
       <h2>한눈에 보기</h2>
       <ul>
-        <li><strong>가장 센세이션한 뉴스</strong>는 OpenAI가 <strong>Astra의 사이버 위험</strong> 때문에 실제로 학습 속도를 늦췄다는 점이다.</li>
-        <li><strong>Anthropic</strong>은 반대로 <strong>Claude Mythos 5를 더 많은 보안팀에게 개방</strong>하며 공격적 확장으로 대응했다.</li>
-        <li><strong>Google</strong>은 <strong>Gemini 3.7 Flash</strong>를 내놓았고, Hacker News에서 <strong>약 949점</strong>을 기록하며 이번 달 가장 강한 제품 반응 중 하나를 만들었다.</li>
-        <li><strong>ChatGPT 쪽 포인트</strong>는 기능 실험이 아니라 <strong>속도와 가격</strong>이다. OpenAI는 GPT-5.6 Sol의 <strong>Ultrafast 모드</strong>를 공개했고, <strong>8월 21일에는 Sol 가격을 20% 이상 한시 인하</strong>했다.</li>
+        <li><strong>ChatGPT</strong>는 8월 들어 <strong>GPT-5.6 Sol/Luna 개편</strong>, <strong>Voice에서 파일·Projects 지원</strong>, <strong>리눅스 데스크톱 공개 프리뷰</strong>까지 한 번에 밀어붙였다.</li>
+        <li><strong>Claude</strong>는 새 모델부터 <strong>전 세계 텍스트 워터마킹</strong>을 적용하기 시작했고, 규제 대응이 곧바로 사용자 반발과 제거 도구 확산으로 이어졌다.</li>
+        <li><strong>Gemini</strong>는 <strong>월간 사용자 10억 명</strong>을 넘겼고, 연결 앱을 대거 늘리며 “실행형 비서” 경쟁으로 들어갔다.</li>
+        <li><strong>센세이션 축</strong>은 제품 그 자체보다 <strong>누가 더 넓게 배포하고, 누가 더 많이 연결하고, 누가 더 강하게 표시하는가</strong>다.</li>
       </ul>
 
-      <h2>1. OpenAI는 “더 빨리”가 아니라 “일단 멈추고 단속”으로 방향을 틀었다</h2>
-      <h3>Astra가 임계 수준 사이버 능력에 가까워지자 학습 속도를 늦췄다</h3>
-      <p><a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/">OpenAI의 2026년 8월 7일 공지</a>는 공개 전 모델 <strong>Astra</strong>가 Preparedness Framework상 <strong>critical cybersecurity capability</strong> 가능성을 배제할 수 없다고 밝혔다. 이어 <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">8월 18일 후속 글</a>에서는 OpenAI-Hugging Face 사건과 Astra 평가 결과를 이유로, <strong>최신 배포 예정 모델들에 대한 RL 학습을 2주간 일시 중단</strong>했고 더 큰 frontier RL 런도 보류했다고 설명했다.</p>
-      <p>이건 단순 안전 PR로 보기 어렵다. 공식 문구가 실제 학습 일정의 감속을 인정했고, <a href="https://www.techmeme.com/260819/p6">Techmeme</a>에는 Bloomberg, New York Times, SiliconANGLE, 각종 업계 코멘트가 한꺼번에 묶였다. 최근 AI 뉴스 중 드물게 <strong>“출시 확대”가 아니라 “속도 조절”이 헤드라인이 된 사례</strong>다.</p>
-      <h3>그런데 동시에 OpenAI는 방어용 사이버 제품은 더 넓게 풀고 있다</h3>
-      <p><a href="https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/">8월 10일 발표</a>에서 OpenAI는 <strong>Daybreak Blue/Red</strong>와 <strong>GPT-5.6-Cyber</strong>를 공개했다. 일반 배포는 늦추면서도, 승인된 보안 인력에게는 더 강한 모델을 먼저 주겠다는 구조다. 즉 OpenAI의 현재 전략은 <strong>대중 배포는 더 조심하고, 검증된 방어자에게는 더 공격적으로 푼다</strong>로 요약된다.</p>
-      <p>여기에 <a href="https://openai.com/index/previewing-ultrafast/">8월 13일</a>에는 <strong>GPT-5.6 Sol Ultrafast</strong>를 공개했고, <a href="https://openai.com/index/gpt-5-6/">8월 21일 업데이트</a>로는 <strong>Sol API 및 credit 가격을 20% 이상 3개월간 인하</strong>했다. 위험 관리로 브레이크를 밟으면서도, 상용화 레버는 더 세게 당기고 있는 셈이다.</p>
-      <blockquote>OpenAI의 8월 메시지는 모순처럼 보이지만 일관적이다. 위험한 frontier 개발은 늦추고, 돈이 되는 배포 경로는 더 정교하게 확장한다.</blockquote>
+      <h2>1. ChatGPT는 모델 개편을 넘어 “작업 앱”으로 몸집을 키우는 중이다</h2>
+      <h3>GPT-5.6 Sol은 고급 사용자용, Luna는 대중 확장용으로 역할이 분명해졌다</h3>
+      <p><a href="https://help.openai.com/en/articles/6825453-gpt-4">OpenAI의 ChatGPT 릴리스 노트</a>에 따르면 2026년 8월 6일 기준 <strong>Plus·Pro는 업데이트된 GPT-5.6 Sol</strong>을 쓰게 됐고, <strong>Free·Go는 GPT-5.6 Luna가 기본 모델</strong>이 된다. Free·Go에는 <strong>무제한 텍스트 채팅</strong>과 <strong>Think 버튼</strong>도 예고됐다.</p>
+      <p>이건 단순 모델 명칭 변경이 아니다. OpenAI는 상위 요금제에는 더 정교한 답변과 사고량 조절을 주고, 하위 요금제에는 사용량 장벽을 낮추는 구조를 만들었다. 즉 <strong>고급 추론은 유료 업셀</strong>, <strong>기본 대화는 대규모 보급</strong>으로 층을 분리한 셈이다.</p>
+      <h3>Voice, Projects, Library, Linux 앱까지 붙으면서 ChatGPT는 점점 “하나의 작업 환경”이 된다</h3>
+      <p>같은 릴리스 노트에는 <strong>Voice에서 파일 업로드와 Projects 지원</strong>, <strong>Library 검색 강화</strong>, 그리고 <strong>Linux 데스크톱 공개 프리뷰</strong>가 함께 적혀 있다. 리눅스 앱은 Ubuntu 24.04/26.04, Debian 13, Fedora 43/44를 지원하며 <strong>브라우저 작업도 앱 안에서 수행</strong>할 수 있다.</p>
+      <p>또 <a href="https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app">데스크톱 내장 브라우저 안내</a>는 ChatGPT가 여러 탭, 다운로드, 로그인 세션을 직접 다루는 방향을 명시한다. 요약하면 이번 달 OpenAI의 실제 뉴스는 “새 모델 하나”보다 <strong>ChatGPT를 문서, 음성, 브라우저, 프로젝트를 묶는 실행형 작업 앱으로 넓히는 것</strong>에 가깝다.</p>
+      <blockquote>ChatGPT의 8월 전략은 더 똑똑한 답변 하나보다, 사용자가 하루 종일 머무를 작업 표면을 늘리는 데 있다.</blockquote>
 
-      <h2>2. Anthropic은 Claude를 “조심스럽게”가 아니라 “방어자에게 더 크게” 배포 중이다</h2>
-      <h3>Mythos 5를 직접 노출하지 않으면서도 보안팀이 결과물은 쓰게 만들었다</h3>
-      <p><a href="https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders">Anthropic의 2026년 8월 21일 발표</a>에 따르면 <strong>Claude Mythos 5</strong>는 Claude Security 스캔과 파트너 보안 도구들에 들어가기 시작했다. 핵심은 사용자가 모델 자체를 자유롭게 프롬프트하는 구조가 아니라, <strong>취약점 스캔 결과·패치 제안 같은 제한된 산출물만 받게 설계했다</strong>는 점이다.</p>
-      <p>Anthropic은 동시에 <strong>오픈소스 보안을 위한 3,500만 달러 크레딧 펀드</strong>와 <strong>Cyber Verification Program 확장</strong>도 내놨다. 최근 OpenAI가 안전 감속을 강조했다면, Anthropic은 <strong>“우리는 더 넓은 방어 배포가 가능할 만큼 가드레일을 정교화했다”</strong>는 신호를 던진 셈이다.</p>
-      <p>이 이슈는 아직 Hacker News 폭발형 반응까지는 아니지만, 보안 업계 관점에서는 훨씬 직접적이다. 앞선 <a href="https://claude.com/blog/computer-use-skills-api-files-api">8월 20일 에이전트 스택 GA</a>와 결합하면 Claude는 범용 챗봇보다 <strong>실제 업무 시스템과 보안 워크플로 안으로 들어가는 속도</strong>가 더 빠르다.</p>
+      <h2>2. Claude는 워터마킹으로 규제 선두에 섰지만, 반응은 가장 시끄럽다</h2>
+      <h3>새 Claude 모델은 텍스트에 보이지 않는 표식을 남기기 시작했다</h3>
+      <p><a href="https://ebs.publicnow.com/view/023C66F084A1E92E2D7416723259CEF565742191">Anthropic의 8월 14일 설명 자료</a>와 이를 인용한 <a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">TechCrunch 보도</a>에 따르면, Anthropic은 <strong>2026년 8월 2일 이후 출시된 Claude 모델 출력에 전 세계적으로 텍스트 워터마킹</strong>을 적용하기 시작했다. 파일에는 C2PA 기반 표식도 붙는다.</p>
+      <p>Anthropic의 논리는 명확하다. EU AI Act 투명성 요구를 맞추고, 텍스트를 복사해도 일정 부분 추적 가능하게 만들겠다는 것이다. 다만 사용자 입장에서는 이 조치가 <strong>“Claude를 썼다는 흔적이 텍스트에 따라다닌다”</strong>는 의미가 되기 때문에 민감할 수밖에 없다.</p>
+      <h3>반발도 즉시 붙었다. 제거 도구와 품질 우려가 같이 커졌다</h3>
+      <p><a href="https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system">The Verge</a>와 <a href="https://www.nature.com/articles/d41586-026-02503-7">Nature</a>는 이 워터마킹이 단어 선택 패턴에 통계적 흔적을 남기는 방식이라고 설명했다. 곧이어 <a href="https://www.businessinsider.com/created-viral-ai-watermark-remover-after-anthropics-announcement-2026-8">Business Insider</a>는 워터마크 제거 오픈소스가 빠르게 확산했다고 전했다.</p>
+      <p>이 뉴스가 중요한 이유는 단순 논쟁거리가 아니라, <strong>생성 AI가 이제 “얼마나 잘 쓰는가”뿐 아니라 “쓴 흔적을 어떻게 남길 것인가”까지 제품 설계의 일부</strong>가 됐기 때문이다. ChatGPT와 Gemini가 연결성 경쟁을 하는 사이, Claude는 규제 적응을 가장 먼저 사용자 경험으로 밀어 넣고 있다.</p>
 
-      <h2>3. Google은 Gemini 3.7 Flash로 “실용형 최강 모델” 경쟁에 불을 붙였다</h2>
-      <h3>개발자 반응만 보면 이번 달 가장 뜨거운 제품 출시 중 하나였다</h3>
-      <p><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google의 2026년 8월 13일 발표</a>에 따르면 <strong>Gemini 3.7 Flash</strong>는 코딩과 에이전트 작업을 겨냥한 새 workhorse 모델이다. Google은 3.6 Flash보다 더 나은 소프트웨어 엔지니어링, 지식 업무, 웹 개발 성능을 주장하면서도 <strong>초기 가격을 절반 수준</strong>으로 제시했다.</p>
-      <p>반응은 숫자로도 컸다. <a href="https://news.ycombinator.com/front">Hacker News 2026년 8월 13일 프런트 페이지</a> 기준 <strong>Gemini 3.7 Flash는 946점</strong>을 기록했고, 후속 페이지 스냅샷에서는 <strong>949점과 483개 댓글</strong>로 집계됐다. 최근 공식 AI 제품 발표 가운데 커뮤니티 화력이 가장 강한 축에 속한다.</p>
-      <p>중요한 건 단순 성능보다 포지션이다. Google은 3.7 Flash를 <strong>“가장 지능적인 workhorse”</strong>로 규정했고, 이 모델을 <strong>Gemini Spark</strong>에도 즉시 넣었다. 즉 Gemini는 초대형 실험보다도 <strong>개발자용 기본기 모델과 상시 실행 에이전트</strong>를 함께 밀고 있다.</p>
+      <h2>3. Gemini는 10억 사용자와 앱 연결 확장으로 “개인 에이전트” 판을 키운다</h2>
+      <h3>Gemini 앱은 월간 사용자 10억 명을 돌파했다</h3>
+      <p><a href="https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/">Google 발표</a>에 따르면 Gemini 앱은 2026년 8월 11일 기준 <strong>월간 사용자 10억 명</strong>을 넘겼다. Google은 음성 사용 증가, 카메라·화면 공유 활용, 학생의 첨부 업로드, 하루 1억 5천만 장 이상 이미지 생성 같은 사용 지표도 함께 공개했다.</p>
+      <p>이 수치는 단순 자랑이 아니라, Gemini가 검색 보조 수준을 넘어 <strong>일상 작업 인터페이스</strong>가 됐다는 주장이다. 특히 iOS 1억 활성 사용자와 안드로이드 내 40개 이상 앱 자동화는 Google이 에이전트 전환을 실사용 지표로 증명하려는 대목이다.</p>
+      <h3>연결 앱 확대와 DeepMind 재편이 동시에 나왔다</h3>
+      <p><a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026/">8월 12일 발표</a>에서 Google은 Gemini에 <strong>Otter.ai, Wix, OpenTable UK, Ticketmaster, Pandora, Zocdoc</strong> 등 연결 앱을 추가한다고 밝혔다. 요점은 질의응답이 아니라 <strong>예약, 편집, 계획, 실행</strong>까지 외부 서비스에 붙이는 것이다.</p>
+      <p>여기에 <a href="https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/">8월 5일 Google DeepMind 조직 개편</a>은 더 큰 파장을 만들었다. Demis Hassabis는 Chair 겸 Chief Scientist로 이동하고, Koray Kavukcuoglu가 제품·모델 실행을 더 직접 맡게 됐다. 이 글은 <a href="https://news.ycombinator.com/item?id=49184755">Hacker News에서 864점과 933개 댓글</a>을 기록했다. 사용자 반응만 보면 이번 달 가장 뜨거운 AI 경영 뉴스 중 하나다.</p>
 
-      <h2>4. 오늘 판세를 한 표로 보면</h2>
+      <h2>4. 오늘 흐름을 한 표로 정리하면</h2>
       <table>
         <thead>
           <tr>
             <th>회사</th>
-            <th>이번 주 핵심 뉴스</th>
+            <th>이번 브리핑 핵심</th>
             <th>의미</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>OpenAI</td>
-            <td>Astra 감속 + Daybreak 확장 + Sol 가격 인하</td>
-            <td>가장 위험한 frontier 개발은 늦추되, 배포와 수익화는 오히려 넓히는 이중 전략</td>
+            <td>Sol/Luna 재편, Voice·Projects 확장, Linux 앱 공개</td>
+            <td>모델 경쟁을 넘어 ChatGPT를 작업 플랫폼으로 확장</td>
           </tr>
           <tr>
             <td>Anthropic</td>
-            <td>Claude Mythos 5 방어 배포 확대</td>
-            <td>모델 직접 접근은 제한하면서도 보안 결과물은 더 넓게 배포하는 안전한 확장 실험</td>
+            <td>Claude 전면 워터마킹</td>
+            <td>규제 대응이 곧 사용자 경험과 논쟁의 핵심이 됨</td>
           </tr>
           <tr>
             <td>Google</td>
-            <td>Gemini 3.7 Flash 출시</td>
-            <td>가격 대비 성능과 에이전트 워크로드를 앞세워 개발자 기본 모델 지위를 노림</td>
+            <td>Gemini 10억 사용자, 연결 앱 확대, DeepMind 재편</td>
+            <td>실행형 비서 경쟁과 조직 재정비를 동시에 추진</td>
           </tr>
         </tbody>
       </table>
 
       <h2>결론</h2>
-      <p><strong>2026년 08월 23일</strong> 기준 가장 중요한 변화는 “누가 더 좋은 모델을 냈나”보다 <strong>누가 어떤 위험은 멈추고, 어떤 시장은 더 세게 여는가</strong>다. OpenAI는 안전을 이유로 frontier 속도를 늦췄고, Anthropic은 보안 배포를 더 넓혔고, Google은 개발자용 기본 모델 전쟁에서 강한 반응을 얻었다.</p>
-      <p>한 문장으로 줄이면 이렇다. <strong>이번 주 AI 업계의 승부는 성능 발표가 아니라 배포 통제권, 안전 레버, 그리고 가격 공세가 동시에 움직이는 방식에서 갈리고 있다.</strong></p>
+      <p><strong>2026년 08월 23일</strong> 기준 AI 업계의 핵심은 성능 수치 하나가 아니다. <strong>OpenAI는 작업 표면을 넓히고, Anthropic은 출력 흔적을 남기고, Google은 사용자와 연결망을 키우고 있다.</strong></p>
+      <p>한 문장으로 줄이면 이렇다. <strong>지금의 AI 경쟁은 “누가 더 똑똑한가”에서 “누가 더 깊게 붙고, 더 많이 실행하고, 더 명확히 표시하는가”로 이동했다.</strong></p>
 
       <div class="sources">
         <h4>SOURCES</h4>
         <ul>
-          <li><a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/">OpenAI: Responding to the next frontier of critical cyber capabilities</a></li>
-          <li><a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI: Pacing model development in an era of cyber-critical capabilities</a></li>
-          <li><a href="https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/">OpenAI: Expanding Daybreak as the Cyber Defense Window Narrows</a></li>
-          <li><a href="https://openai.com/index/previewing-ultrafast/">OpenAI: Previewing Ultrafast mode</a></li>
-          <li><a href="https://openai.com/index/gpt-5-6/">OpenAI: GPT-5.6 update with August 21 price cut note</a></li>
-          <li><a href="https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders">Anthropic: Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders</a></li>
-          <li><a href="https://claude.com/blog/computer-use-skills-api-files-api">Anthropic: Build production agents with computer use, the Skills API, and the Files API</a></li>
-          <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google: Introducing Gemini 3.7 Flash</a></li>
-          <li><a href="https://news.ycombinator.com/front">Hacker News: August 13, 2026 front page</a></li>
-          <li><a href="https://news.ycombinator.com/?p=2">Hacker News: page showing Gemini 3.7 Flash score snapshot</a></li>
-          <li><a href="https://www.techmeme.com/260819/p6">Techmeme: OpenAI Astra slowdown coverage roundup</a></li>
+          <li><a href="https://help.openai.com/en/articles/6825453-gpt-4">OpenAI Help: ChatGPT Release Notes</a></li>
+          <li><a href="https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app">OpenAI Help: Using the built-in browser in the ChatGPT desktop app</a></li>
+          <li><a href="https://ebs.publicnow.com/view/023C66F084A1E92E2D7416723259CEF565742191">Anthropic: How Claude's text watermark works</a></li>
+          <li><a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">TechCrunch: Anthropic says it will watermark text generated by its AI models</a></li>
+          <li><a href="https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system">The Verge: Anthropic explains how Claude's invisible text watermarks will work</a></li>
+          <li><a href="https://www.nature.com/articles/d41586-026-02503-7">Nature: Can Anthropic's invisible watermarks curb AI slop?</a></li>
+          <li><a href="https://www.businessinsider.com/created-viral-ai-watermark-remover-after-anthropics-announcement-2026-8">Business Insider: Viral AI watermark remover after Anthropic's announcement</a></li>
+          <li><a href="https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/">Google: Gemini app hits 1 billion monthly active users</a></li>
+          <li><a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026/">Google: New connected apps are coming to Gemini</a></li>
+          <li><a href="https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/">Google: The next chapter of our AI momentum</a></li>
+          <li><a href="https://news.ycombinator.com/item?id=49184755">Hacker News: Google DeepMind reshuffle discussion</a></li>
         </ul>
       </div>
     </div>
