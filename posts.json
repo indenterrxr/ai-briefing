@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026년 09월 28일",
+    "title": "AI 브리핑 — 2026년 09월 28일",
+    "summary": "9월 후반 AI 제품 흐름: 문서·음성·에이전트와 계정 보안이 하나의 운영 과제가 됐다.",
+    "file": "posts/2026-09-28.html"
+  },
+  {
+    "date": "2026년 09월 27일",
+    "title": "AI 브리핑 — 2026년 09월 27일",
+    "summary": "주말 점검: AI 도구의 편의성은 연결 권한·승인·감사 기록과 함께 관리해야 한다.",
+    "file": "posts/2026-09-27.html"
+  },
+  {
+    "date": "2026년 09월 26일",
+    "title": "AI 브리핑 — 2026년 09월 26일",
+    "summary": "주간 운영 점검: 문서·음성·연결 앱이 늘어난 만큼 권한 관리도 함께 강화해야 한다.",
+    "file": "posts/2026-09-26.html"
+  },
+  {
+    "date": "2026년 09월 25일",
+    "title": "AI 브리핑 — 2026년 09월 25일",
+    "summary": "ChatGPT에 로그인·보안 설정 변경을 확인하는 Security history가 추가됐다.",
+    "file": "posts/2026-09-25.html"
+  },
+  {
+    "date": "2026년 09월 24일",
+    "title": "AI 브리핑 — 2026년 09월 24일",
+    "summary": "ChatGPT Enterprise가 Sites와 광고에 대한 외부 접근 제어를 추가했다.",
+    "file": "posts/2026-09-24.html"
+  },
+  {
+    "date": "2026년 09월 23일",
+    "title": "AI 브리핑 — 2026년 09월 23일",
+    "summary": "ChatGPT Voice에서 플러그인을 쓰고, 음성 작업을 텍스트로 이어갈 수 있게 됐다.",
+    "file": "posts/2026-09-23.html"
+  },
+  {
+    "date": "2026년 09월 22일",
+    "title": "AI 브리핑 — 2026년 09월 22일",
+    "summary": "GPT-6 Sol·Luna의 Work·Codex 도입과 ChatGPT 플래시카드 기능.",
+    "file": "posts/2026-09-22.html"
+  },
+  {
+    "date": "2026년 09월 21일",
+    "title": "AI 브리핑 — 2026년 09월 21일",
+    "summary": "ChatGPT Finances의 신용점수 연결과 Privacy Center 공개.",
+    "file": "posts/2026-09-21.html"
+  },
+  {
+    "date": "2026년 09월 20일",
+    "title": "AI 브리핑 — 2026년 09월 20일",
+    "summary": "주간 흐름: 문서·음성·에이전트 작업 공간이 AI 제품의 핵심 접점이 됐다.",
+    "file": "posts/2026-09-20.html"
+  },
+  {
+    "date": "2026년 09월 19일",
+    "title": "AI 브리핑 — 2026년 09월 19일",
+    "summary": "AI 개발 속도 조절을 둘러싼 협의가 반독점 소송의 쟁점으로도 번졌다.",
+    "file": "posts/2026-09-19.html"
+  },
+  {
+    "date": "2026년 09월 18일",
+    "title": "AI 브리핑 — 2026년 09월 18일",
+    "summary": "AI의 오작동·정렬 문제를 공개 보고하고 검증하는 방식이 제품 경쟁의 핵심이 됐다.",
+    "file": "posts/2026-09-18.html"
+  },
+  {
+    "date": "2026년 09월 17일",
+    "title": "AI 브리핑 — 2026년 09월 17일",
+    "summary": "ChatGPT의 Microsoft Word 확장과 Claude 프로젝트의 대화 중심 재설계.",
+    "file": "posts/2026-09-17.html"
+  },
+  {
+    "date": "2026년 09월 16일",
+    "title": "AI 브리핑 — 2026년 09월 16일",
+    "summary": "Claude 작업 화면 통합과 Gemini 3.8 Live의 실시간 대화·추론 기능.",
+    "file": "posts/2026-09-16.html"
+  },
+  {
+    "date": "2026년 09월 15일",
+    "title": "AI 브리핑 — 2026년 09월 15일",
+    "summary": "Claude의 소상공인·Salesforce 확장과 주요 AI 기업의 안전성 대화 보도.",
+    "file": "posts/2026-09-15.html"
+  },
+  {
+    "date": "2026년 09월 14일",
+    "title": "AI 브리핑 — 2026년 09월 14일",
+    "summary": "Claude의 금융·코딩 운영 기능과 ChatGPT 건강 연결 권한 설정 변화.",
+    "file": "posts/2026-09-14.html"
+  },
+  {
+    "date": "2026년 09월 13일",
+    "title": "AI 브리핑 — 2026년 09월 13일",
+    "summary": "코딩 에이전트의 실행 하네스가 제품 경쟁과 보안 관리의 공통 과제가 됐다.",
+    "file": "posts/2026-09-13.html"
+  },
+  {
+    "date": "2026년 09월 12일",
+    "title": "AI 브리핑 — 2026년 09월 12일",
+    "summary": "AI 개발 속도와 안전성 논쟁이 OpenAI의 상장 계획에도 영향을 주기 시작했다.",
+    "file": "posts/2026-09-12.html"
+  },
+  {
+    "date": "2026년 09월 11일",
+    "title": "AI 브리핑 — 2026년 09월 11일",
+    "summary": "맞춤 GPT의 플러그인 전환 예고와 ChatGPT Enterprise 그룹 관리자 기능.",
+    "file": "posts/2026-09-11.html"
+  },
+  {
     "date": "2026년 09월 10일",
     "title": "AI 브리핑 — 2026년 09월 10일",
     "summary": "AI 안전 사임, AI 증류 경고와 반박, Mistral 투자, Meta Muse.",
