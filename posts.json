@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026년 09월 10일",
+    "title": "AI 브리핑 — 2026년 09월 10일",
+    "summary": "AI 안전 사임, AI 증류 경고와 반박, Mistral 투자, Meta Muse.",
+    "file": "posts/2026-09-10.html"
+  },
+  {
+    "date": "2026년 09월 09일",
+    "title": "AI 브리핑 — 2026년 09월 09일",
+    "summary": "나비에–스토크스 제안, ChatGPT Images 2.5, Claude 비용 최적화, Google Pics.",
+    "file": "posts/2026-09-09.html"
+  },
+  {
+    "date": "2026년 09월 07일",
+    "title": "AI 브리핑 — 2026년 09월 07일",
+    "summary": "OpenAI 연구 가속, 안전성 경고, Claude Code 진단, Gemini 영상 분석.",
+    "file": "posts/2026-09-07.html"
+  },
+  {
+    "date": "2026년 09월 06일",
+    "title": "AI 브리핑 — 2026년 09월 06일",
+    "summary": "Claude의 페르마 정리 형식화, Codex 리셋, GitSpawn 취약점, Gemini 협업.",
+    "file": "posts/2026-09-06.html"
+  },
+  {
+    "date": "2026년 09월 05일",
+    "title": "AI 브리핑 — 2026년 09월 05일",
+    "summary": "NVIDIA의 Hugging Face 인수, ChatGPT·Codex 업무 연동, Claude Code, Gemini Android.",
+    "file": "posts/2026-09-05.html"
+  },
+  {
     "date": "2026년 09월 04일",
     "title": "AI 브리핑 — 2026년 09월 04일",
     "summary": "GPT-6 Astra·Daybreak, Claude EFS, Google Lyria 3.5, 주요 AI 서비스 장애.",
