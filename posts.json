@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026년 10월 01일",
+    "title": "AI 브리핑 — 2026년 10월 01일",
+    "summary": "FTC의 OpenAI·Anthropic 조사와 AI 에이전트의 권한·감사·통지 과제.",
+    "file": "posts/2026-10-01.html"
+  },
+  {
     "date": "2026년 09월 30일",
     "title": "AI 브리핑 — 2026년 09월 30일",
     "summary": "OpenAI DevDay: Dots, ChatGPT Space, Decisions API, 클라우드 Codex와 안전성 쟁점.",
