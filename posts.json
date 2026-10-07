@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026년 10월 07일",
+    "title": "AI 브리핑 — 2026년 10월 07일",
+    "summary": "OpenAI 텍스트 워터마크, 에이전트 맥락 보안, 기기 내 멀티모달 임베딩의 핵심",
+    "file": "posts/2026-10-07.html"
+  },
+  {
+    "date": "2026년 10월 06일",
+    "title": "AI 브리핑 — 2026년 10월 06일",
+    "summary": "Mistral Large 4, Anthropic 보안 접근 3등급, 계약 업무 에이전트 평가의 변화",
+    "file": "posts/2026-10-06.html"
+  },
+  {
     "date": "2026년 10월 05일",
     "title": "AI 브리핑 — 2026년 10월 05일",
     "summary": "Gemini Live Guided Vision, ChatGPT Finances 확대, OpenAI 모델 증류 방어 강화",
