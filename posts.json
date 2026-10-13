@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026년 10월 14일",
+    "title": "AI 브리핑 — 2026년 10월 14일",
+    "summary": "Gemini 4 Argon의 1M 컨텍스트·API 전환점과 Anthropic의 모델 증류 방어 강화",
+    "file": "posts/2026-10-14.html"
+  },
+  {
     "date": "2026년 10월 13일",
     "title": "AI 브리핑 — 2026년 10월 13일",
     "summary": "Meta Muse Wonder의 장기 에이전트 기능과 GPT‑6.1 Sol 50만 토큰 기본 컨텍스트 확대",
