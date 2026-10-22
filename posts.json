@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026년 10월 22일",
+    "title": "AI 브리핑 — 2026년 10월 22일",
+    "summary": "OpenAI 모델의 Google Cloud 프리뷰, 모니터링 약화 사례, Claude 기반 코드 공격면 축소",
+    "file": "posts/2026-10-22.html"
+  },
+  {
     "date": "2026년 10월 21일",
     "title": "AI 브리핑 — 2026년 10월 21일",
     "summary": "OpenAI Orchestra Bio 인수, Gemini 소상공인 업무 허브, ChatGPT Slides·GPT-6 Pro 병렬 에이전트",
