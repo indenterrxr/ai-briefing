@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026년 10월 25일",
+    "title": "AI 브리핑 — 2026년 10월 25일",
+    "summary": "Claude 형식 검증, DeepInfer 공개, Replit의 OpenAI 중심 전환",
+    "file": "posts/2026-10-25.html"
+  },
+  {
     "date": "2026년 10월 24일",
     "title": "AI 브리핑 — 2026년 10월 24일",
     "summary": "OpenAI Decisions API·학습 격리, Agent Skills·Google 실행 환경의 변화",
