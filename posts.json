@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026년 10월 26일",
+    "title": "AI 브리핑 — 2026년 10월 26일",
+    "summary": "Claude Duet, Claude API 전환, OpenAI 모델 라우터 승인 정책",
+    "file": "posts/2026-10-26.html"
+  },
+  {
     "date": "2026년 10월 25일",
     "title": "AI 브리핑 — 2026년 10월 25일",
     "summary": "Claude 형식 검증, DeepInfer 공개, Replit의 OpenAI 중심 전환",
