@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026년 10월 27일",
+    "title": "AI 브리핑 — 2026년 10월 27일",
+    "summary": "ChatGPT 잠금 대화, 기기 내 사기 탐지, 단일 에이전트 루프 설계",
+    "file": "posts/2026-10-27.html"
+  },
+  {
     "date": "2026년 10월 26일",
     "title": "AI 브리핑 — 2026년 10월 26일",
     "summary": "Claude Duet, Claude API 전환, OpenAI 모델 라우터 승인 정책",
