@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026년 11월 06일",
+    "title": "AI 브리핑 — 2026년 11월 06일",
+    "summary": "OpenAI 자동 취약점 발굴, Gemini Omni 1.2 Flash GA, Claude Enterprise 통제",
+    "file": "posts/2026-11-06.html"
+  },
+  {
     "date": "2026년 11월 05일",
     "title": "AI 브리핑 — 2026년 11월 05일",
     "summary": "Codex Git 워크플로 확장, Gemini 교육 통제, 에이전트 행동 감사 강화",
